@@ -78,7 +78,7 @@ for i in range(X.shape[2]):
     
 X_final = np.concatenate((X_scaled, input_cat_vector), axis=2)
 #X_train, X_test, y_train, y_test = train_test_split(X_final, y, test_size=0.5, random_state=42)
-X_train, X_test, y_train, y_test = train_test_split(X_final, y, test_size=0.5, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X_final, y_simp, test_size=0.5, random_state=42)
 
 #%% Selects equal number of region outputs
 X_train_arr = np.array(X_train)
